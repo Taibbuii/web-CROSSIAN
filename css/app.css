@@ -9,11 +9,21 @@
   width: 100%;
   height: auto;
 }
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .container {
   width: 100%;
   max-width: 1274px;
   margin-inline: auto;
   padding-inline: 64px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
 }
 .txt-h2 {
   font-size: 120px;
@@ -48,7 +58,8 @@
   padding-top: 110px;
   background-color: #070707;
   color: #ffffff;
-  height: 1850px;
+  position: relative;
+  z-index: 1;
 }
 .home-hero-content {
   display: flex;
@@ -89,46 +100,36 @@
   margin-right: -193px;
   height: 804px;
 }
-.home-hero-content-second {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 7px;
-  padding-right: 166px;
-  margin-top: -240px;
+/* Home Quote */
+.home-quote {
+  position: relative;
+  z-index: 2;
+  background-color: #070707;
+  color: #ffffff;
+  padding-bottom: 142px;
 }
-.home-hero-img-1 {
-  padding-right: 84px;
-  order: 1;
+.home-quote-img {
+  grid-column: 1 / 5;
+  width: 100%;
+  margin-top: -242px;
 }
-
-.home-hero-img-laptop {
-  width: 362px;
-  height: 565px;
+.home-quote-content {
+  grid-column: 6 / 11;
+  position: relative;
+  margin-top: 43px;
+  margin-bottom: 140px;
 }
-.home-hero-laptop-all {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 527px;
-  height: 209px;
-  margin-top: 38px;
-  order: 2;
-  flex-direction: column;
-}
-.home-hero-comma {
-  width: 74px;
-  height: 49px;
-}
-.home-hero-laptop-comma {
+.home-quote-comma {
+  position: absolute;
+  bottom: 100%;
+  left: -44px;
   margin-bottom: 20px;
+  width: 74px;
 }
-.home-hero-laptop-title {
-  max-width: 483px;
-  margin-left: 44px;
-}
-/* About hero */
+/* Home About */
 .about-hero {
+  position: relative;
+  z-index: 2;
   min-height: 1560px;
 }
 .about-hero-content {
