@@ -334,8 +334,7 @@ ul li::before {
   padding-bottom: 150px;
 }
 .box {
-  width: 430px;
-  height: 210px;
+  max-width: 430px;
   margin-bottom: 60px;
   margin-right: 60px;
   padding-top: 1px;
