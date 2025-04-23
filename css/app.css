@@ -379,10 +379,8 @@ ul li::before {
 }
 .hiring-title-full {
   opacity: 0.1;
-  margin-bottom: 22px;
   color: #0530ad;
 }
-
 .hiring-content {
   grid-column: 1/13;
   display: flex;
@@ -395,27 +393,124 @@ ul li::before {
   max-width: 883px;
   color: #2c2c2c;
 }
-
-.items {
+.hiring-job-list {
   grid-column: 4/11;
+  margin-bottom: 60px;
+  max-width: 598px;
+  margin-left: -20px;
+  color: #2c2c2c;
+}
+.job-item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 558px;
-  height: 125px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 20px;
+  border-radius: 10px;
+  background-color: #f6f8ff;
 }
-.careers-items-content {
-  padding-left: 1px;
-  align-items: flex-start;
+.job-item.active {
+  border-bottom: 1px solid rgba(44, 44, 44, 0.5);
 }
-.items-content-title {
+.job-item:hover {
+  box-shadow: 0 5px 30px rgba(10, 46, 148, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.job-item:hover .job-title {
+  color: #0530ad;
+}
+.job-details {
+  text-align: left;
+}
+.job-title {
   font-weight: 600;
 }
-.hiring-arrow-right {
-  display: flex;
-  align-items: flex-end;
+.job-title:hover {
+  color: #0530ad;
 }
 .img-arrow-right {
   width: 18px;
   height: 18px;
+}
+.btn-learn-more {
+  grid-column: 6/8;
+  text-align: center;
+  margin-left: -2px;
+  background-color: #0530ad;
+  color: #ffffff;
+  width: 170px;
+  height: 60px;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+
+/* hiring footer */
+.hiring-footer {
+  color: #ffffff;
+  background-color: #f6f8ff;
+}
+.hiring-footer-triangle {
+  background: linear-gradient(to bottom, #0A2D94 35%, #1E45B5 100%);
+  width: 100%;
+  height: 100%;
+clip-path: polygon(
+  50% 0,
+  100% 35%, 
+  100% 100%, 
+  0 100%, 
+  0 35%
+);
+}
+.hiring-house {
+  grid-column: 1/13;
+  margin-top: 277px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+}
+.img-logo-title-hiring {
+  margin-bottom: 25px;
+}
+.house-content {
+  margin-bottom: 76px;
+}
+.house-content-address {
+  margin-bottom: 26px;
+}
+.house-content-dot {
+  margin-bottom: 23px;
+}
+.dot-hiring {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+.img-linkedin {
+  width: 30px;
+  aspect-ratio: 1/1;
+  margin-bottom: 63px;
+}
+.house-content-footer {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-bottom: 106px;
+}
+.hiring-bitmap {
+  background: linear-gradient(to bottom,#1237A0 31%,#1237A0 100%);
+  width: 100%;
+  height: 347px;
+  position: relative;
+  z-index: 1;
+  margin-top: -347px;
+}
+.img-bitmap {
+  margin-top: 72px;
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
 }
